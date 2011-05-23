@@ -49,7 +49,7 @@
 package com.caucho.hessian.io;
 
 import java.io.IOException;
-import java.util.logging.*;
+import java.util.logging.Logger;
 
 import com.caucho.hessian.HessianException;
 

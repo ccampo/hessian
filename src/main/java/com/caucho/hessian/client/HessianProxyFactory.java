@@ -48,7 +48,16 @@
 
 package com.caucho.hessian.client;
 
-import com.caucho.hessian.io.*;
+import com.caucho.hessian.io.AbstractHessianInput;
+import com.caucho.hessian.io.AbstractHessianOutput;
+import com.caucho.hessian.io.Hessian2Input;
+import com.caucho.hessian.io.Hessian2Output;
+import com.caucho.hessian.io.HessianDebugInputStream;
+import com.caucho.hessian.io.HessianInput;
+import com.caucho.hessian.io.HessianOutput;
+import com.caucho.hessian.io.HessianRemoteObject;
+import com.caucho.hessian.io.HessianRemoteResolver;
+import com.caucho.hessian.io.SerializerFactory;
 import com.caucho.services.client.ServiceProxyFactory;
 
 import javax.naming.Context;

@@ -48,7 +48,7 @@
 
 package com.caucho.hessian.io;
 
-import java.util.logging.*;
+import java.util.logging.Logger;
 
 /**
  * Serializing an object for known object types.

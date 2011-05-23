@@ -48,13 +48,25 @@
 
 package com.caucho.hessian.security;
 
-import java.security.*;
-import java.security.cert.*;
-import javax.crypto.*;
+import com.caucho.hessian.io.Hessian2Input;
+import com.caucho.hessian.io.Hessian2Output;
+import com.caucho.hessian.io.HessianEnvelope;
 
-import java.io.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.security.Key;
+import java.security.MessageDigest;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.security.SecureRandom;
+import java.security.cert.X509Certificate;
 
-import com.caucho.hessian.io.*;
+import javax.crypto.Cipher;
+import javax.crypto.CipherInputStream;
+import javax.crypto.KeyGenerator;
+import javax.crypto.Mac;
+import javax.crypto.SecretKey;
 
 public class X509Signature extends HessianEnvelope {
   private String _algorithm = "HmacSHA256";

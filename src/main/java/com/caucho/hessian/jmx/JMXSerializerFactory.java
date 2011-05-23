@@ -55,7 +55,13 @@ import com.caucho.hessian.io.Serializer;
 import com.caucho.hessian.io.StringValueDeserializer;
 import com.caucho.hessian.io.StringValueSerializer;
 
-import javax.management.*;
+import javax.management.MBeanAttributeInfo;
+import javax.management.MBeanConstructorInfo;
+import javax.management.MBeanNotificationInfo;
+import javax.management.MBeanOperationInfo;
+import javax.management.MBeanParameterInfo;
+import javax.management.ObjectInstance;
+import javax.management.ObjectName;
 
 /**
  * Serializers for JMX classes.

@@ -61,7 +61,8 @@ import java.lang.reflect.Proxy;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.logging.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Proxy implementation for Burlap clients.  Applications will generally

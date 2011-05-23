@@ -50,10 +50,15 @@ package com.caucho.hessian.io;
 
 import com.caucho.hessian.HessianException;
 
-import java.io.*;
-import java.net.URL;
+import java.io.InputStream;
 import java.lang.ref.SoftReference;
-import java.util.*;
+import java.net.URL;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Properties;
+import java.util.WeakHashMap;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;

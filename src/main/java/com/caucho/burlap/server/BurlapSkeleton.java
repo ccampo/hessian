@@ -55,7 +55,8 @@ import com.caucho.services.server.ServiceContext;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.logging.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Proxy class for Burlap services.

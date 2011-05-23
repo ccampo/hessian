@@ -48,11 +48,18 @@
 
 package com.caucho.hessian.server;
 
-import com.caucho.hessian.io.*;
+import com.caucho.hessian.io.Hessian2Input;
+import com.caucho.hessian.io.SerializerFactory;
 import com.caucho.services.server.GenericService;
 import com.caucho.services.server.Service;
 import com.caucho.services.server.ServiceContext;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.io.Writer;
+import java.util.logging.Logger;
 import javax.servlet.GenericServlet;
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
@@ -61,8 +68,6 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
-import java.util.logging.*;
 
 /**
  * Servlet for serving Hessian services.

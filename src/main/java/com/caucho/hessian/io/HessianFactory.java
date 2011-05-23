@@ -48,9 +48,12 @@
 
 package com.caucho.hessian.io;
 
-import java.util.logging.*;
-import java.io.*;
 import com.caucho.hessian.util.HessianFreeList;
+
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * Factory for creating HessianInput and HessianOutput streams.

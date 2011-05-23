@@ -52,7 +52,7 @@ import java.io.IOException;
 import java.lang.reflect.Proxy;
 import java.util.HashMap;
 
-import java.util.logging.*;
+import java.util.logging.Logger;
 
 import com.caucho.hessian.HessianException;
 
