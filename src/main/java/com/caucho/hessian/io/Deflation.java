@@ -48,12 +48,9 @@
 
 package com.caucho.hessian.io;
 
-import java.util.*;
 import java.util.zip.*;
 
 import java.io.*;
-
-import com.caucho.hessian.io.*;
 
 public class Deflation extends HessianEnvelope {
   public Deflation()

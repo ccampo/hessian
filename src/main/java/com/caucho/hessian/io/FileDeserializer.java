@@ -48,10 +48,7 @@
 
 package com.caucho.hessian.io;
 
-import java.io.IOException;
 import java.io.File;
-
-import com.caucho.hessian.HessianException;
 
 /**
  * Deserializing a File

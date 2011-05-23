@@ -48,10 +48,7 @@
 
 package com.caucho.hessian.io;
 
-import java.io.IOException;
 import java.math.BigDecimal;
-
-import com.caucho.hessian.HessianException;
 
 /**
  * Deserializing a BigDecimal

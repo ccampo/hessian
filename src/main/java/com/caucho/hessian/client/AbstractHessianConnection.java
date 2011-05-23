@@ -48,7 +48,6 @@
 
 package com.caucho.hessian.client;
 
-import java.net.URL;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.IOException;

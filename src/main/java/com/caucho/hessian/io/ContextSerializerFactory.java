@@ -51,15 +51,12 @@ package com.caucho.hessian.io;
 import com.caucho.hessian.HessianException;
 
 import java.io.*;
-import java.math.BigDecimal;
 import java.net.URL;
 import java.lang.ref.SoftReference;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.lang.annotation.Annotation;
-import java.lang.ref.WeakReference;
 
 /**
  * The classloader-specific Factory for returning serialization

@@ -51,14 +51,12 @@ package com.caucho.hessian.io;
 import com.caucho.burlap.io.BurlapRemoteObject;
 
 import java.io.*;
-import java.math.BigDecimal;
 import java.util.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.lang.annotation.Annotation;
 import java.lang.ref.SoftReference;
 import java.util.concurrent.ConcurrentHashMap;
-import javax.management.*;
 
 /**
  * Factory for returning serialization methods.

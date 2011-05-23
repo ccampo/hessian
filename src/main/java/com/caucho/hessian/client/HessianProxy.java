@@ -57,7 +57,6 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.WeakHashMap;
-import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 
