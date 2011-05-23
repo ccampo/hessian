@@ -1,0 +1,7 @@
+This is a community fork from the sources of Hessian 4.0.7 intended to fix whatever bugs find in this version.
+You are welcome to contribute by posting bug reports and posting pull requests of bug fixes via GitHub.
+
+This source is distributed under the apache license version 1.1, as stated in the original license file.
+
+Before fixing a bug and posting a pull request, please fill a bug report in the parent GitHub project.
+
