@@ -65,7 +65,7 @@ public final class HessianFreeList<T> {
   /**
    * Create a new free list.
    *
-   * @param initialSize maximum number of free objects to store.
+   * @param size maximum number of free objects to store.
    */
   public HessianFreeList(int size)
   {

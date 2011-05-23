@@ -215,8 +215,6 @@ public class MicroBurlapOutput {
    * <code><pre>
    * &lt;null>&lt;/null>
    * </pre></code>
-   *
-   * @param value the string value to write.
    */
   public void writeNull()
     throws IOException
@@ -267,7 +265,9 @@ public class MicroBurlapOutput {
    * &lt;null>&lt;/null>
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte array value to write.
+   * @param offset the index of the bytes to write.
+   * @param length the number of bytes to write.
    */
   public void writeBytes(byte []buffer, int offset, int length)
     throws IOException
@@ -289,7 +289,7 @@ public class MicroBurlapOutput {
    * &lt;date>19980508T095131Z&lt;/date>
    * </pre></code>
    *
-   * @param value the date in milliseconds from the epoch in UTC
+   * @param time the time in milliseconds from the epoch in UTC
    */
   public void writeUTCDate(long time)
     throws IOException
@@ -314,7 +314,7 @@ public class MicroBurlapOutput {
    * &lt;date>19980508T095131Z&lt;/date>
    * </pre></code>
    *
-   * @param value the date in milliseconds from the epoch in local timezone
+   * @param time the time in milliseconds from the epoch in local timezone
    */
   public void writeLocalDate(long time)
     throws IOException
@@ -638,7 +638,7 @@ public class MicroBurlapOutput {
   /**
    * Prints a date.
    *
-   * @param date the date to print.
+   * @param calendar the date to print.
    */
   public void printDate(Calendar calendar)
     throws IOException

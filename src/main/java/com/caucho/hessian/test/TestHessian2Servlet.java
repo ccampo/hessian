@@ -1783,8 +1783,8 @@ public class TestHessian2Servlet
   /**
    * Invoke the object with the request from the input stream.
    *
-   * @param in the Hessian input stream
-   * @param out the Hessian output stream
+   * @param is the Hessian input stream
+   * @param os the Hessian output stream
    */
   @Override
   public void invoke(InputStream is, OutputStream os, String objectId,

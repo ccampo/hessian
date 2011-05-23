@@ -233,8 +233,6 @@ public class MicroHessianOutput {
    * <code><pre>
    * N
    * </pre></code>
-   *
-   * @param value the string value to write.
    */
   public void writeNull()
     throws IOException
@@ -289,7 +287,7 @@ public class MicroHessianOutput {
    * N
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte array value to write.
    */
   public void writeBytes(byte []buffer)
     throws IOException
@@ -313,7 +311,9 @@ public class MicroHessianOutput {
    * N
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte buffer value to write.
+   * @param offset the index of the bytes to write.
+   * @param length the number of bytes to write.
    */
   public void writeBytes(byte []buffer, int offset, int length)
     throws IOException

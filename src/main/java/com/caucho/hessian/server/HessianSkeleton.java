@@ -108,7 +108,6 @@ public class HessianSkeleton extends AbstractSkeleton {
   /**
    * Create a new hessian skeleton.
    *
-   * @param service the underlying service object.
    * @param apiClass the API interface
    */
   public HessianSkeleton(Class apiClass)
@@ -134,8 +133,8 @@ public class HessianSkeleton extends AbstractSkeleton {
   /**
    * Invoke the object with the request from the input stream.
    *
-   * @param in the Hessian input stream
-   * @param out the Hessian output stream
+   * @param is the Hessian input stream
+   * @param os the Hessian output stream
    */
   public void invoke(InputStream is, OutputStream os)
     throws Exception
@@ -146,8 +145,8 @@ public class HessianSkeleton extends AbstractSkeleton {
   /**
    * Invoke the object with the request from the input stream.
    *
-   * @param in the Hessian input stream
-   * @param out the Hessian output stream
+   * @param is the Hessian input stream
+   * @param os the Hessian output stream
    */
   public void invoke(InputStream is, OutputStream os,
                      SerializerFactory serializerFactory)

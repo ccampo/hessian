@@ -162,8 +162,6 @@ public class BurlapOutput extends AbstractBurlapOutput {
    * <code><pre>
    * &lt;method>method-name&lt;/method>
    * </pre></code>
-   *
-   * @param method the method name to call.
    */
   public void startCall()
     throws IOException
@@ -500,8 +498,6 @@ public class BurlapOutput extends AbstractBurlapOutput {
    * <code><pre>
    * &lt;null>&lt;/null>
    * </pre></code>
-   *
-   * @param value the string value to write.
    */
   public void writeNull()
     throws IOException
@@ -552,7 +548,9 @@ public class BurlapOutput extends AbstractBurlapOutput {
    * N
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the char array value to write.
+   * @param offset the index of the chars to write.
+   * @param length the number of chars to write.
    */
   public void writeString(char []buffer, int offset, int length)
     throws IOException
@@ -581,7 +579,7 @@ public class BurlapOutput extends AbstractBurlapOutput {
    * &lt;null>&lt;/null>
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte array value to write.
    */
   public void writeBytes(byte []buffer)
     throws IOException
@@ -605,7 +603,9 @@ public class BurlapOutput extends AbstractBurlapOutput {
    * &lt;null>&lt;/null>
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte array value to write.
+   * @param offset the index of the bytes to write.
+   * @param length the number of bytes to write.
    */
   public void writeBytes(byte []buffer, int offset, int length)
     throws IOException
@@ -872,7 +872,7 @@ public class BurlapOutput extends AbstractBurlapOutput {
   /**
    * Prints a date.
    *
-   * @param date the date to print.
+   * @param calendar the date to print.
    */
   public void printDate(Calendar calendar)
     throws IOException

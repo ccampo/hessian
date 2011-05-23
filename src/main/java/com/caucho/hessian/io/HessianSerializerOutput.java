@@ -105,7 +105,7 @@ public class HessianSerializerOutput extends Hessian2Output {
   /**
    * Applications which override this can do custom serialization.
    *
-   * @param object the object to write.
+   * @param obj the object to write.
    */
   public void writeObjectImpl(Object obj)
     throws IOException

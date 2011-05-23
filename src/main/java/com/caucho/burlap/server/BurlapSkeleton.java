@@ -82,7 +82,6 @@ public class BurlapSkeleton extends AbstractSkeleton {
   /**
    * Create a new burlap skeleton.
    *
-   * @param service the underlying service object.
    * @param apiClass the API interface
    */
   public BurlapSkeleton(Class apiClass)

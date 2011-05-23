@@ -72,7 +72,7 @@ public class ServiceContext {
    * Sets the request object prior to calling the service's method.
    *
    * @param request the calling servlet request
-   * @param serviceId the service identifier
+   * @param serviceName the service identifier
    * @param objectId the object identifier
    */
   public static void begin(ServletRequest request,

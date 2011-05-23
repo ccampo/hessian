@@ -141,8 +141,6 @@ abstract public class AbstractHessianOutput {
    * <code><pre>
    * C
    * </pre></code>
-   *
-   * @param method the method name to call.
    */
   abstract public void startCall()
     throws IOException;
@@ -263,8 +261,6 @@ abstract public class AbstractHessianOutput {
    * <code><pre>
    * N
    * </pre></code>
-   *
-   * @param value the string value to write.
    */
   abstract public void writeNull()
     throws IOException;
@@ -302,7 +298,9 @@ abstract public class AbstractHessianOutput {
    * N
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the char array value to write.
+   * @param offset the index of the chars to write.
+   * @param length the number of chars to write.
    */
   abstract public void writeString(char []buffer, int offset, int length)
     throws IOException;
@@ -321,7 +319,7 @@ abstract public class AbstractHessianOutput {
    * N
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte array value to write.
    */
   abstract public void writeBytes(byte []buffer)
     throws IOException;
@@ -339,7 +337,9 @@ abstract public class AbstractHessianOutput {
    * N
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte array value to write.
+   * @param offset the index of the bytes to write.
+   * @param length the number of bytes to write.
    */
   abstract public void writeBytes(byte []buffer, int offset, int length)
     throws IOException;
@@ -357,7 +357,9 @@ abstract public class AbstractHessianOutput {
    * b b16 b18 bytes
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte array value to write.
+   * @param offset the index of the bytes to write.
+   * @param length the number of bytes to write.
    */
   abstract public void writeByteBufferPart(byte []buffer,
 					   int offset,
@@ -371,7 +373,9 @@ abstract public class AbstractHessianOutput {
    * b b16 b18 bytes
    * </pre></code>
    *
-   * @param value the string value to write.
+   * @param buffer the byte array value to write.
+   * @param offset the index of the bytes to write.
+   * @param length the number of bytes to write.
    */
   abstract public void writeByteBufferEnd(byte []buffer,
 					  int offset,
@@ -454,8 +458,8 @@ abstract public class AbstractHessianOutput {
     throws IOException;
 
   /**
-   * @param obj
-   * @return
+   * @param obj an object.
+   * @return its reference id.
    */
   abstract public int getRef(Object obj);
 

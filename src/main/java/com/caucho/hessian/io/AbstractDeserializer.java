@@ -120,8 +120,8 @@ public class AbstractDeserializer implements Deserializer {
    * Creates a field value class. The default
    * implementation returns the String.
    *
-   * @param len number of items in the array
-   * @return the new empty array
+   * @param name a string.
+   * @return the string passed in parameter.
    */
   public Object createField(String name)
   {
